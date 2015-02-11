@@ -1,28 +1,27 @@
-
+"use strict"; 
 function calc() {
 
   var finalTemperature;
   var tempTemperature = original.value;
   var expression = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
 
-  var m = temp.match(regexp);
+  var m = tempTemperature.match(expression);
   
   if (m) {
     var num = m[1];
     var type = m[2];
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
-      result = (num * 9/5)+32;
-      result = result.toFixed(1)+" Farenheit"
+      finalTemperature = (num * 9/5)+32;
+      finalTemperature = finalTemperature.toFixed(1)+" Farenheit"
     }
     else {
-      result = (num - 32)*5/9;
-      result = result.toFixed(1)+" Celsius"
+      finalTemperature = (num - 32)*5/9;
+      finalTemperature = finalTemperature.toFixed(1)+" Celsius"
     }
-    converted.innerHTML = result;
+    converted.innerHTML = finalTemperature;
   }
   else {
-    converted.innerHTML = "aaaayy gurl, dont undestend ur tempp. gimme sum thing laik 3.4 C. aaaaaaaayyyyyyyyyyy";
+    converted.innerHTML = "Failure in conversion";
   }
-  
 }

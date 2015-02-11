@@ -12,20 +12,20 @@
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-  
-
+    <script type="text/javascript" src="temperature.js"></script>
   </head>
+
   <body>
     <table>
     <div class="container-fluid landing-bar">
-        <h1 style="color:white">Temperature converter</h1>
+        <h1 style="color:white">TEMPERATURE CONVERTER</h1>
     </div>
     <div class="container-fluid">
       <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div id="imaginary_container"> 
                     <div class="input-group stylish-input-group">
-                        <input id="original" autofocus onchage="calculate()" type="text" class="form-control"  placeholder="Insert temperature here: for example 35F" >
+                        <input id="original" autofocus onchange="calc()" type="text" class="form-control"  placeholder="Insert temperature here: for example 35F">
                         <span class="input-group-addon">
                             <button type="submit">
                                 <span class="glyphicon glyphicon-refresh"></span>
@@ -43,9 +43,9 @@
                 <div class="box-icon">
                     <span class="fa fa-4x glyphicon glyphicon-ok"></span>
                 </div>
-                <div class="info">
+                <div class="info text-center">
                     <h4 class="text-center">Converted temperature:</h4>
-                    <p><span class="output" id="converted"></p>
+                    <span class="output" id="converted"></span>
                 </div>
             </div>
         </div>
