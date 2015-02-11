@@ -31,6 +31,21 @@ div.container-fluid h1
    transform: translate(-50%, -50%) 
 }   /* 4 */
 
+
+div.text-footer
+{
+   height: 10em;
+   position: relative; 
+}             
+div.text-footer p 
+{
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%) 
+}   /* 4 */
 .footer-bar
 {
 	background-color: #009688;
