@@ -1,22 +1,160 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'travis' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.36
 4 verbose node symlink /usr/bin/node
-5 error install Couldn't read dependencies
-6 error Failed to parse json
-6 error Unexpected string
-7 error File: /home/eebritos/PL/tempConverter/tempConverter/package.json
-8 error Failed to parse package.json data.
-8 error package.json must be actual JSON, not just JavaScript.
-8 error
-8 error This is not a bug in npm.
-8 error Tell the package author to fix their package.json file. JSON.parse
-9 error System Linux 3.13.0-45-generic
-10 error command "/usr/bin/node" "/usr/bin/npm" "install"
-11 error cwd /home/eebritos/PL/tempConverter/tempConverter
-12 error node -v v0.10.36
-13 error npm -v 1.4.28
-14 error file /home/eebritos/PL/tempConverter/tempConverter/package.json
-15 error code EJSONPARSE
-16 verbose exit [ 1, true ]
+5 verbose cache add [ 'travis', null ]
+6 verbose cache add name=undefined spec="travis" args=["travis",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'travis',
+7 verbose parsed url   path: 'travis',
+7 verbose parsed url   href: 'travis' }
+8 silly lockFile e6cc0fb2-travis travis
+9 verbose lock travis /home/eebritos/.npm/e6cc0fb2-travis.lock
+10 silly lockFile e6cc0fb2-travis travis
+11 silly lockFile e6cc0fb2-travis travis
+12 verbose addNamed [ 'travis', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile ca03b7ec-travis travis@
+15 verbose lock travis@ /home/eebritos/.npm/ca03b7ec-travis.lock
+16 silly addNameRange { name: 'travis', range: '*', hasData: false }
+17 verbose request where is /travis
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 2dd5017e705f36ee
+20 verbose url raw /travis
+21 verbose url resolving [ 'https://registry.npmjs.org/', './travis' ]
+22 verbose url resolved https://registry.npmjs.org/travis
+23 verbose request where is https://registry.npmjs.org/travis
+24 info trying registry request attempt 1 at 21:31:37
+25 http GET https://registry.npmjs.org/travis
+26 http 200 https://registry.npmjs.org/travis
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Wed, 25 Feb 2015 21:31:39 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"CVDZQAAV6980GOFTC6GM0U8O6"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '8882',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1424899898.872474,VS0,VE351',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'travis', range: '*', hasData: true }
+29 silly addNameRange versions [ 'travis',
+29 silly addNameRange   [ '0.1.0-alpha1',
+29 silly addNameRange     '0.1.0-alpha2',
+29 silly addNameRange     '0.1.0-alpha3',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1' ] ]
+30 verbose addNamed [ 'travis', '0.1.1' ]
+31 verbose addNamed [ '0.1.1', '0.1.1' ]
+32 silly lockFile 3dc395fb-travis-0-1-1 travis@0.1.1
+33 verbose lock travis@0.1.1 /home/eebritos/.npm/3dc395fb-travis-0-1-1.lock
+34 silly lockFile 779826d7-pmjs-org-travis-travis-0-1-1-tgz https://registry.npmjs.org/travis/-/travis-0.1.1.tgz
+35 verbose lock https://registry.npmjs.org/travis/-/travis-0.1.1.tgz /home/eebritos/.npm/779826d7-pmjs-org-travis-travis-0-1-1-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/travis/-/travis-0.1.1.tgz',
+36 verbose addRemoteTarball   '80fe1c36f6f3b739fce07e6063838ce436357d60' ]
+37 info retry fetch attempt 1 at 21:31:39
+38 verbose fetch to= /tmp/npm-18267-23pz06ky/registry.npmjs.org/travis/-/travis-0.1.1.tgz
+39 http GET https://registry.npmjs.org/travis/-/travis-0.1.1.tgz
+40 http 200 https://registry.npmjs.org/travis/-/travis-0.1.1.tgz
+41 silly lockFile 779826d7-pmjs-org-travis-travis-0-1-1-tgz https://registry.npmjs.org/travis/-/travis-0.1.1.tgz
+42 silly lockFile 779826d7-pmjs-org-travis-travis-0-1-1-tgz https://registry.npmjs.org/travis/-/travis-0.1.1.tgz
+43 silly lockFile 3dc395fb-travis-0-1-1 travis@0.1.1
+44 silly lockFile 3dc395fb-travis-0-1-1 travis@0.1.1
+45 silly lockFile ca03b7ec-travis travis@
+46 silly lockFile ca03b7ec-travis travis@
+47 silly resolved [ { name: 'travis',
+47 silly resolved     description: 'JavaScript client library for Travis CI',
+47 silly resolved     version: '0.1.1',
+47 silly resolved     homepage: 'https://github.com/travis-ci/travis.js',
+47 silly resolved     keywords: [ 'travis', 'travis-ci', 'travis-pro' ],
+47 silly resolved     author: '',
+47 silly resolved     license: 'MIT',
+47 silly resolved     main: 'build/travis',
+47 silly resolved     files: [ 'build/travis.js', 'README.md', 'README.coffee.md', 'LICENSE' ],
+47 silly resolved     directories: { lib: 'build' },
+47 silly resolved     repository: { type: 'git', url: 'https://github.com/travis-ci/travis.js' },
+47 silly resolved     scripts: { prepublish: 'grunt build' },
+47 silly resolved     devDependencies:
+47 silly resolved      { 'coffee-script': '~1.7.1',
+47 silly resolved        grunt: '~0.4.4',
+47 silly resolved        'grunt-contrib-coffee': '^0.10.1',
+47 silly resolved        'grunt-contrib-uglify': '^0.4.0',
+47 silly resolved        'grunt-contrib-watch': '^0.6.1',
+47 silly resolved        'grunt-jasmine-bundle': '^0.2.0',
+47 silly resolved        'grunt-jasmine-node': '^0.2.1',
+47 silly resolved        'source-map-support': '^0.2.6',
+47 silly resolved        'grunt-contrib-connect': '^0.7.1',
+47 silly resolved        karma: '^0.12.14',
+47 silly resolved        'karma-chrome-launcher': '^0.1.3',
+47 silly resolved        'karma-jasmine': '^0.2.2',
+47 silly resolved        'karma-coffee-preprocessor': '^0.2.1',
+47 silly resolved        'grunt-karma': '^0.8.3',
+47 silly resolved        'karma-sauce-launcher': '^0.2.8',
+47 silly resolved        'karma-firefox-launcher': '^0.1.3',
+47 silly resolved        'karma-safari-launcher': '^0.1.1',
+47 silly resolved        chalk: '^0.4.0' },
+47 silly resolved     bugs: { url: 'https://github.com/travis-ci/travis.js/issues' },
+47 silly resolved     _id: 'travis@0.1.1',
+47 silly resolved     dist:
+47 silly resolved      { shasum: '80fe1c36f6f3b739fce07e6063838ce436357d60',
+47 silly resolved        tarball: 'http://registry.npmjs.org/travis/-/travis-0.1.1.tgz' },
+47 silly resolved     _from: 'travis@',
+47 silly resolved     _npmVersion: '1.4.3',
+47 silly resolved     _npmUser: { name: 'rkh', email: 'npm@rkh.im' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     _shasum: '80fe1c36f6f3b739fce07e6063838ce436357d60',
+47 silly resolved     _resolved: 'https://registry.npmjs.org/travis/-/travis-0.1.1.tgz' } ]
+48 info install travis@0.1.1 into /usr/lib
+49 info installOne travis@0.1.1
+50 verbose lib/node_modules/travis unbuild
+51 verbose tar unpack /home/eebritos/.npm/travis/0.1.1/package.tgz
+52 silly lockFile 3b3187a3-tar-usr-lib-node-modules-travis tar:///usr/lib/node_modules/travis
+53 verbose lock tar:///usr/lib/node_modules/travis /home/eebritos/.npm/3b3187a3-tar-usr-lib-node-modules-travis.lock
+54 silly lockFile d7a8c835-tos-npm-travis-0-1-1-package-tgz tar:///home/eebritos/.npm/travis/0.1.1/package.tgz
+55 verbose lock tar:///home/eebritos/.npm/travis/0.1.1/package.tgz /home/eebritos/.npm/d7a8c835-tos-npm-travis-0-1-1-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/travis'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/travis']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/travis',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/travis',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.13.0-45-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "travis"
+61 error cwd /home/eebritos/PL/tempConverter/tempPrueba/tempConverter
+62 error node -v v0.10.36
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/travis
+65 error fstream_path /usr/lib/node_modules/travis
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/travis'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]
