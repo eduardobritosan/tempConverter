@@ -1,0 +1,44 @@
+{
+  "name": "tempConverter",
+  "version": "1.0.0",
+  "description": "Conversor de temperatura, practica de Procesadores de Lenguajes, 3ero de ingenieria informatica, ULL.",
+  "main": "temperature.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "open tests/index.html",
+    "karma": "node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardobritosan/tempConverter.git"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "Brito & Hector",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardobritosan/tempConverter/issues"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "karma": "*",
+    "karma-mocha": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-phantomjs-launcher": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-util": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "karma-chai": "*",
+    "del": "*",
+    "node-static": "*"
+  },
+  "homepage": "https://github.com/eduardobritosan/tempConverter"
+}
