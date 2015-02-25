@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "google-chrome tests/karmatest.html",
-    "karma": "node_modules/karma/bin/karma start"
+    "test": "node_modules/karma/bin/karma start",
+    "mochatest": "google-chrome tests/index.html"
   },
   "repository": {
     "type": "git",
