@@ -108,3 +108,29 @@ h1 {
     padding-top: 10px;
     text-align: justify;
 }
+
+a:link
+{
+  color: #FFFFFF;
+};
+
+a:visited
+{
+  color: #FFFFFF;
+};
+
+a:hover
+{
+  color: #FFFFFF;
+};
+
+a:active
+{
+  color: #FFFFFF;
+};
+
+.progress
+{
+  height: 40px;
+  width: 40px;
+}
