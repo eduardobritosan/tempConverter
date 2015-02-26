@@ -39,6 +39,7 @@
     "karma-chai": "*",
     "del": "*",
     "node-static": "*"
+    "gulp-karma": "*"
   },
   "homepage": "https://github.com/eduardobritosan/tempConverter"
 }
