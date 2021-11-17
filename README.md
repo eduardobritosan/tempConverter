@@ -1,4 +1,3 @@
-# tempConverter
-Conversor de temperatura PL
+# Simple Javascript Temperature Converter
 
-[![Build Status](https://travis-ci.org/eduardobritosan/tempConverter.svg)](https://travis-ci.org/eduardobritosan/tempConverter)
+Coded for the Language Processors course in college
